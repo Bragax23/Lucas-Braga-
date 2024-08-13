@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de Contato</title>
     <link rel="stylesheet" href="style.css" />
-    <script>
-      function showThankYouMessage(event) {
-        event.preventDefault();
-        document.querySelector(".form").style.display = "none";
-        document.querySelector(".thank-you").style.display = "block";
-      }
-    </script>
   </head>
   <body>
     <h1>Formulário de Contato</h1>
@@ -20,7 +13,6 @@
       action="https://formsubmit.co/lucasbragasantos2001@gmail.com"
       method="POST"
       class="form"
-      onsubmit="showThankYouMessage(event)"
     >
       <label for="name">Nome</label>
       <input type="text" name="name" id="name" required />
@@ -34,12 +26,11 @@
         name="_next"
         value="#"
       />
-      <button type="submit" href="obrigado.html" >Enviar</button>
+      <button type="submit" href="obrigado.html">Enviar</button>
+      
+               
+              
+            </header>
     </form>
-
-    <div class="thank-you" style="display:none;">
-      <h1>Obrigado por entrar em contato!</h1>
-      <p>Retornarei sua mensagem em breve! :)</p>
-    </div>
   </body>
 </html>
